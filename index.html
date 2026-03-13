@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المارد الذكي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div class="genie">
+            <img src="genie.png" alt="المارد" />
+        </div>
+
+        <div class="question-box">
+            <h2 id="question">اضغط ابدأ لبدء اللعبة</h2>
+
+            <div class="answers">
+                <button onclick="sendAnswer('yes')">نعم</button>
+                <button onclick="sendAnswer('no')">لا</button>
+                <button onclick="sendAnswer('unknown')">لا أعلم</button>
+                <button onclick="sendAnswer('maybe')">يمكن</button>
+            </div>
+
+            <button class="start" onclick="startGame()">ابدأ</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
